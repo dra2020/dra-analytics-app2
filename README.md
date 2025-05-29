@@ -1,8 +1,8 @@
-# DRA Standalone App
+# DRA Analytics App
 
 ## Overview
 
-The Dave's Redistricting (DRA) Standalone App is a specialized tool designed to run DRA's partisan analytics algorithms on election profiles without requiring associated DRA maps. This self-contained application provides redistricting analysis capabilities that can be used entirely offline.
+The Dave's Redistricting (DRA) Analytics App is a specialized tool designed to run DRA's partisan analytics algorithms on election profiles without requiring associated DRA maps. This self-contained application provides redistricting analysis capabilities that can be used entirely offline.
 
 ### Key Features
 
@@ -120,8 +120,8 @@ In the development environment, the Vite dev server proxies requests from the Re
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/dra2020/dra-analytics-app.git
-   cd DRA-standalone
+   git clone https://github.com/dra2020/dra-analytics-app2.git
+   cd dra-analytics-app2
    ```
 
 2. **Install dependencies for both client and server**

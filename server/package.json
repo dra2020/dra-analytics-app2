@@ -1,8 +1,8 @@
 {
-  "name": "dra-analytics",
+  "name": "dra-analytics-app2",
   "version": "1.0.0",
   "bin": "index.js",
-  "description": "specialized tool designed to run DRA's partisan analytics algorithms on election profiles without requiring associated DRA maps",
+  "description": "A specialized tool designed to run DRA's partisan analytics algorithms on election profiles without requiring an associated DRA map or a full plan",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node index.js",
@@ -19,7 +19,7 @@
       "dist/**/*"
     ],
     "outputPath": "../app",
-    "name": "dra-analytics"
+    "name": "dra-analytics-app2"
   },
   "author": "Colin Ramsay",
   "license": "ISC",
