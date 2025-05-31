@@ -47,7 +47,7 @@ app.post('/shutdown', (req, res) => {
   // Send the response before shutting down
   setTimeout(() => {
     console.log('Server shutting down by user request');
-    if (viteProcess) {
+    if (process.env.NODE_ENV === 'development') {
       viteProcess.kill(); // Ensure Vite dev server is also shut down, if it exists
     }
     process.exit(0); // Exiting main process also shuts down Vite dev server as backup
