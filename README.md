@@ -182,10 +182,10 @@ To create standalone binaries for different platforms:
 
 ```bash
 # From the server directory
-pkg .
+npm run build
 ```
 
-This creates executables for Windows, macOS, and Linux in the `app` directory at the project root.
+This uses pkg to create executables for Windows, macOS, and Linux in the `app` directory at the project root.
 
 ## License
 
