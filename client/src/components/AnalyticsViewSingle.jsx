@@ -64,13 +64,13 @@ function AnalyticsViewSingle({ profile, scorecard, resetUpload, setCurrView }) {
       noteLabel: 'Notes',
       notes: ['By convention, positive values of bias metrics favor Republicans & negative values favor Democrats.']
   };
-  const biasMatrics = [prop, efficiencyGap, '', seatsBias50, votesBias50, seatsBiasV, '', declination, meanMedian, turnoutBias, lopsidedOutcomes]
+  const biasMetrics = [prop, efficiencyGap, '', seatsBias50, votesBias50, seatsBiasV, '', declination, meanMedian, turnoutBias, lopsidedOutcomes]
 
   // Responsiveness Metadata
   const littleR = new Metadata("Responsiveness", scorecard.responsiveness.littleR, "r", "\u{03C1}", "", "The slope of the seats-votes curve at the map-wide vote share");
   const rD = new Metadata("Responsive districts", scorecard.responsiveness.rD, "Rd", "", "", "The likely number of responsive districts");
   const bigR = new Metadata("Overall responsiveness", scorecard.responsiveness.bigR, "R", "", "", "The overall responsiveness (or winner’s bonus)");
-  const resMatrics = [littleR, rD, bigR];
+  const resMetrics = [littleR, rD, bigR];
 
   /* ======
   HELPERS
@@ -171,11 +171,11 @@ function AnalyticsViewSingle({ profile, scorecard, resetUpload, setCurrView }) {
       <SVCurveDiagram profile={profile} scorecard={scorecard} profileName={profile.fileName} />
       {/* //Bias Measures Panel */}
       <div id='biasPanel' style={{ minWidth: 0 }}>
-          <MetricPanel header={biasHeader} metrics={biasMatrics} notes={biasNotes} />
+          <MetricPanel header={biasHeader} metrics={biasMetrics} notes={biasNotes} />
       </div>
       {/* Responsiveness Measures Panel */}
       <div id='responsivenessPanel' style={{ minWidth: 0 }}>
-        <MetricPanel header={resHeader} metrics={resMatrics} />
+        <MetricPanel header={resHeader} metrics={resMetrics} />
       </div>
       </>
   )
