@@ -62,6 +62,8 @@ Example:
 Note: The districts do not have to be sorted by vote share like shown in the example.
 
 The `sample-data` directory contains an example profile and the resulting scorecard json.
+The `hypothetical-profiles` subdirectory contains a dozen hypothetical profiles created
+by Greg Warrington. There is also a figure illustrating their rank-vote graphs. 
 
 ### Analyzing a Profile
 
